@@ -45,7 +45,7 @@ public class Minigame {
 					}
 				}
 				
-			}else {System.out.println("틀렸습니다.");}
+			}
 			
 		}else {
 			System.out.println("코인을 넣어 주세요.");
