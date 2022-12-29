@@ -28,11 +28,13 @@ public class Ex04_05_임동준 {
 		}
 		System.out.println("================================================");
 		sum=0;
-		System.out.print("총점:");
+		System.out.print("총점:\t");
 		for (int i = 0; i < score[i].length; i++) {
 			for (int j = 0; j < score.length; j++) {
-				
+				sum+=score[j][i];
 			}
+			System.out.print(sum + "\t");
+			sum = 0;
 		}
 	}
 }
