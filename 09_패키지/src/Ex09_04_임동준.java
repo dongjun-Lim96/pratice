@@ -24,6 +24,7 @@ class Person2{
 
 }
 
+<<<<<<< HEAD
 public class Ex09_04_ìž„ë™ì¤€ {
 	public static void main(String[] args) {
 
@@ -73,3 +74,55 @@ public class Ex09_04_ìž„ë™ì¤€ {
 
 	}
 }
+=======
+public class Ex09_04_ÀÓµ¿ÁØ {
+	public static void main(String[] args) {
+
+		Person2[] arr = {
+				new Person2("kim","1234","±è¿¬¾Æ"),
+				new Person2("son","7777","¼ÕÈï¹Î"),
+				new Person2("jo","9876","Á¶±Ô¼º")
+		};
+
+		Scanner sc= new Scanner(System.in);
+
+		do {
+			int loop = 0;
+			System.out.print("idÀÔ·Â:");
+			String id = sc.next();
+			if (id.length() > 8 || id.length() < 2) {
+				System.out.println("id´Â 2±ÛÀÚ~8±ÛÀÚ ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù.");
+				continue;
+			}else {
+				
+				for (int i = 0; i < arr.length; i++) {
+					if (id.equals(arr[i].getId())) {
+						System.out.print("pwÀÔ·Â:");
+						String pw = sc.next();
+						if (pw.equals(arr[i].getPw())) {
+							System.out.println(arr[i].getName()+"´Ô ¹Ý°©½À´Ï´Ù.");
+						}else {
+							System.out.println("ºñ¹øÀÌ ¸ÂÁö ¾Ê½À´Ï´Ù.");
+						}
+					}else {
+						loop++;
+					}
+				}
+				if (loop == arr.length) {
+					System.out.println("ÀÏÄ¡ÇÏ´Â id°¡ ¾ø½À´Ï´Ù.");
+					continue;
+				}
+			}
+
+			System.out.print("°è¼Ó?");
+			String key = sc.next();
+			if (key.equals("n")) {
+				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+				break;
+			}
+
+		} while (true);
+
+	}
+}
+>>>>>>> branch 'master' of https://github.com/dongjun-Lim96/pratice.git
