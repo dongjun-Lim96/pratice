@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import static java.lang.Math.*; //스테틱 붙으면 Math 생략가능
 
 public class Ex09_10_Math {
@@ -46,4 +47,23 @@ public class Ex09_10_Math {
 		
 	}
 
+=======
+
+public class Ex09_10_Math {
+	public static void main(String[] args) {
+		
+		int rd = (int)(Math.random()*6)+3;
+		System.out.println(rd);
+		
+		for (int i = 0; i <= 10; i++) {
+			rd = (int)(Math.random()*6)+3;
+			System.out.println(rd);
+		}
+		
+		char ch = (char)((Math.random()*26)+'A');
+		System.out.println(ch);
+		
+		System.out.println(1);
+	}
+>>>>>>> branch 'master' of https://github.com/dongjun-Lim96/pratice.git
 }
